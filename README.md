@@ -26,4 +26,4 @@ and then reached with url
 `   http://localhost:5000`
 
 ## Points of Interest
-Project will populate map with points of interest taken from a data file. Map will also drop a pin when clicked and tell the user what address that pin was dropped at. 
+Project will populate map with points of interest taken from a data file. Map will also drop a pin when clicked and that will say what address that pin was dropped at. 
