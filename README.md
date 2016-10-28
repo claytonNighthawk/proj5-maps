@@ -27,3 +27,7 @@ and then reached with url
 
 ## Points of Interest
 Project will populate map with points of interest taken from a data file. Map will also drop a pin when clicked that will say what address that pin was dropped at. 
+
+## References
+This project references some code from an old hackathon project
+https://github.com/claytonNighthawk/GlassdoorGoogleMapsProject
