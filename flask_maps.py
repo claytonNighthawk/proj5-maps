@@ -10,6 +10,7 @@ from flask import jsonify # For AJAX transactions
 
 import json
 import logging
+import pre
 
 ###
 # Globals
@@ -25,7 +26,15 @@ app.secret_key = CONFIG.secret_key  # Should allow using session variables
 @app.route('/')
 @app.route('/index')
 def index():
-    return flask.render_template('maps.html')
+    if True:
+    #if 'locations' not in flask.session:
+        app.logger.debug("Processing locations file")
+        raw = CONFIG.locations
+        location_data = pre.process(raw)
+        #flask.session['locations'] = location_data
+        app.logger.debug(location_data)
+
+    return flask.render_template('maps.html', locations=json.dumps(location_data))
 
 @app.errorhandler(404)
 def page_not_found(error):

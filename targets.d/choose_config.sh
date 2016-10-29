@@ -33,9 +33,8 @@ Edit to fit development or deployment environment.
 
 PORT=${port}
 DEBUG = True  # Set to False for production use
-secret_key="${secret}"
-success_at_count = 3  # How many matches before we declare victory? 
-vocab="data/vocab.txt"  # CHANGE THIS to use another vocabulary file
+secret_key = "${secret}"
+locations = "data/locations.txt"
 
 EOF
 }
