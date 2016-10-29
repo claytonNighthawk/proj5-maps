@@ -28,7 +28,7 @@ function initMap() {
 	google.maps.event.addListener(map, 'click', function(event) {
 	placeMarker(event.latLng); 
 	});
-	placeMarker(eugene);
+	//placeMarker(eugene);
 	
 	var locations = {{ locations|safe }};
 	for (i = 0; i < locations.length; i++) {
@@ -52,10 +52,6 @@ function initMap() {
 
 <!-- Our own style sheet -->
 <link rel="stylesheet" href="/static/css/maps.css" />
-<script>
-	//var locations = {{ locations|tojson|safe }};
-	//console.log(locations);
-</script>
 <body>
 <!-- bootstrap requires a 'container' div around content -->
 <div class="container">
